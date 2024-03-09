@@ -649,4 +649,5 @@
 
     <!--    reminder volume adjuster layout-->
     <string name="reminder_volume_adjuster_title">objętość</string>
+    <string name="save">"zapisać      "</string>
 </resources>

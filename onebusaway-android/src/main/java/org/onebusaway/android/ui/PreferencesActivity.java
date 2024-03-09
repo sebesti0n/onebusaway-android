@@ -386,6 +386,10 @@ public class PreferencesActivity extends PreferenceActivity
         return true;
     }
 
+    /*
+    * Dialog to set the volume for reminder using seekbar
+    * save volume in shared Preferences
+    */
     private void reminderVolumeDialog() {
         final int progress = settings.getInt("reminder_volume",100);
         LayoutInflater inflater = getLayoutInflater();
@@ -393,7 +397,7 @@ public class PreferencesActivity extends PreferenceActivity
         SeekBar seekBar = customLayout.findViewById(R.id.seekBar);
         AlertDialog.Builder builder = new AlertDialog.Builder(this)
                 .setView(customLayout)
-                .setPositiveButton(R.string.ok,
+                .setPositiveButton(R.string.save,
                         (dialog, which)->{
                                 setReminderVolume(seekBar.getProgress());
                         })

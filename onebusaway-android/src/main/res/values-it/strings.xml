@@ -916,4 +916,5 @@
 
     <!--    reminder volume adjuster layout-->
     <string name="reminder_volume_adjuster_title">Volume</string>
+    <string name="save">"salvare "</string>
 </resources>
