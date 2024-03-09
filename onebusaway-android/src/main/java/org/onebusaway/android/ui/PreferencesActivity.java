@@ -420,7 +420,6 @@ public class PreferencesActivity extends PreferenceActivity
             int maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_ALARM);
             int scaledVolume = (int) (progress / 100f * maxVolume);
             audioManager.setStreamVolume(AudioManager.STREAM_ALARM, scaledVolume, 0);
-            Log.w("sebesti0n seekbar", String.valueOf(progress));
             SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(this).edit();
             editor.putInt("reminder_volume", progress);
             editor.apply();
