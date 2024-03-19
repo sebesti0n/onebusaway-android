@@ -544,6 +544,10 @@ public class ArrivalsListFragment extends ListFragment
         }
 
         if (info != null) {
+            for (ObaArrivalInfo it:info
+                 ) {
+                Log.d("ListArrival",it.inString());
+            }
             ArrivalsListLoader loader = getArrivalsLoader();
             int minutesAfter;
             if (loader != null) {

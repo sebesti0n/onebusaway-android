@@ -286,6 +286,9 @@ android {
     useLibrary 'android.test.base'
     useLibrary 'android.test.mock'
     namespace 'org.onebusaway.android'
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 /**

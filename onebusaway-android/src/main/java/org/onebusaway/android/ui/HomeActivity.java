@@ -1293,7 +1293,6 @@ public class HomeActivity extends AppCompatActivity
         showSlidingPanel();
         moveFabsLocation();
     }
-
     private void showSlidingPanel() {
         if (mSlidingPanel.getPanelState() == SlidingUpPanelLayout.PanelState.HIDDEN) {
             mSlidingPanel.setPanelState(SlidingUpPanelLayout.PanelState.COLLAPSED);

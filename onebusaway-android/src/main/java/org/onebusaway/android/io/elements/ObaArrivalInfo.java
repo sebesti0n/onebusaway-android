@@ -133,6 +133,44 @@ public final class ObaArrivalInfo implements Serializable{
         historicalOccupancy = "";
         occupancyStatus = "";
     }
+    public String arraytostring() {
+        StringBuilder sb = new StringBuilder();
+        for (String element : situationIds) {
+            sb.append(element).append(" ");
+        }
+        return sb.toString();
+    }
+    public String inString() {
+        return "TripInfo{" +
+                ", routeId='" + routeId + '\'' +
+                ", routeShortName='" + routeShortName + '\'' +
+                ", routeLongName='" + routeLongName + '\'' +
+                ", tripId='" + tripId + '\'' +
+                ", tripHeadsign='" + tripHeadsign + '\'' +
+                ", stopId='" + stopId + '\'' +
+                ", predictedArrivalTime=" + predictedArrivalTime +
+                ", scheduledArrivalTime=" + scheduledArrivalTime +
+                ", predictedDepartureTime=" + predictedDepartureTime +
+                ", scheduledDepartureTime=" + scheduledDepartureTime +
+                ", status='" + status + '\'' +
+                ", frequency=" + frequency +
+                ", vehicleId='" + vehicleId + '\'' +
+                ", distanceFromStop=" + distanceFromStop +
+                ", numberOfStopsAway=" + numberOfStopsAway +
+                ", serviceDate=" + serviceDate +
+                ", lastUpdateTime=" + lastUpdateTime +
+                ", predicted=" + predicted +
+                ", tripStatus=" + tripStatus.inString() +
+                ", situationIds=" + arraytostring() +
+                ", arrivalEnabled=" + arrivalEnabled +
+                ", departureEnabled=" + departureEnabled +
+                ", stopSequence=" + stopSequence +
+                ", totalStopsInTrip=" + totalStopsInTrip +
+                ", blockTripSequence=" + blockTripSequence +
+                ", historicalOccupancy='" + historicalOccupancy + '\'' +
+                ", occupancyStatus='" + occupancyStatus + '\'' +
+                '}';
+    }
 
     /**
      * @return The ID of the route.

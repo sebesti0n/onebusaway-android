@@ -20,6 +20,7 @@ import android.content.Context;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -58,6 +59,7 @@ public class ArrivalsListAdapterStyleA extends ArrivalsListAdapterBase<ArrivalIn
             ArrayList<ArrivalInfo> list =
                     ArrivalInfoUtils.convertObaArrivalInfo(getContext(),
                             arrivals, routesFilter, currentTime, false);
+            for (ArrivalInfo it:list) Log.d("ArrivalAdapter",it.inString());
             setData(list);
         } else {
             setData(null);

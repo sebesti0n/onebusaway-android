@@ -118,7 +118,23 @@ public final class ArrivalInfo {
             mStatus = null;
         }
     }
-
+    public String inString() {
+        return "ArrivalInfo{" +
+                "mInfo=" + mInfo +
+                ", mEta=" + mEta +
+                ", mDisplayTime=" + mDisplayTime +
+                ", mStatusText='" + mStatusText + '\'' +
+                ", mTimeText='" + mTimeText + '\'' +
+                ", mNotifyText='" + mNotifyText + '\'' +
+                ", mColor=" + mColor +
+                ", mPredicted=" + mPredicted +
+                ", mIsArrival=" + mIsArrival +
+                ", mIsRouteAndHeadsignFavorite=" + mIsRouteAndHeadsignFavorite +
+                ", mHistoricalOccupancy=" + mHistoricalOccupancy +
+                ", mPredictedOccupancy=" + mPredictedOccupancy +
+                ", mStatus=" + mStatus +
+                '}';
+    }
     /**
      * @param includeArrivalDeparture true if the arrival/departure label should be included, false
      *                                if it should not

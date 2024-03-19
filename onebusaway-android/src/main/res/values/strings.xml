@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2010-2017 Paul Watts (paulcwatts@gmail.com),
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2010-2017 Paul Watts (paulcwatts@gmail.com),
     University of South Florida (sjbarbeau@gmail.com)
     Benjamin Du (bendu@me.com),
     Microsoft Corporation
@@ -1227,4 +1226,7 @@
     <string name="travel_behavior_dialog_opt_out_message">If you opt out of the research study, we won\'t receive any more information about your travel behavior to help improve public transit.</string>
     <string name="cancel">Cancel</string>
     <string name="my_option_clear_starred_routes">Remove all starred routes</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
 </resources>

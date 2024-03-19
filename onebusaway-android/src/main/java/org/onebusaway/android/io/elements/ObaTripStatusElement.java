@@ -91,7 +91,32 @@ public final class ObaTripStatusElement implements ObaTripStatus, Serializable {
         blockTripSequence = 0;
         occupancyStatus = "";
     }
-
+    public String inString() {
+        return "TripStatus{" +
+                "serviceDate=" + serviceDate +
+                ", predicted=" + predicted +
+                ", scheduleDeviation=" + scheduleDeviation +
+                ", vehicleId='" + vehicleId + '\'' +
+                ", closestStop='" + closestStop + '\'' +
+                ", closestStopTimeOffset=" + closestStopTimeOffset +
+                ", position=" + position +
+                ", activeTripId='" + activeTripId + '\'' +
+                ", distanceAlongTrip=" + distanceAlongTrip +
+                ", scheduledDistanceAlongTrip=" + scheduledDistanceAlongTrip +
+                ", totalDistanceAlongTrip=" + totalDistanceAlongTrip +
+                ", orientation=" + orientation +
+                ", nextStop='" + nextStop + '\'' +
+                ", nextStopTimeOffset=" + nextStopTimeOffset +
+                ", phase='" + phase + '\'' +
+                ", status='" + status + '\'' +
+                ", lastUpdateTime=" + lastUpdateTime +
+                ", lastKnownLocation=" + lastKnownLocation +
+                ", lastLocationUpdateTime=" + lastLocationUpdateTime +
+                ", lastKnownOrientation=" + lastKnownOrientation +
+                ", blockTripSequence=" + blockTripSequence +
+                ", occupancyStatus='" + occupancyStatus + '\'' +
+                '}';
+    }
     @Override
     public long getServiceDate() {
         return serviceDate;

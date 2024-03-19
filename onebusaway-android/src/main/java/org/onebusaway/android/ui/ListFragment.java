@@ -393,6 +393,7 @@ public class ListFragment extends Fragment {
 
         if (visibility) {
             mRefreshProgressContainer.setVisibility(View.VISIBLE);
+
         } else {
             mRefreshProgressContainer.setVisibility(View.GONE);
         }

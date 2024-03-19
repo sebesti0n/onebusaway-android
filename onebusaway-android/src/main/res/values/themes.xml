@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014 University of South Florida (sjbarbeau@gmail.com)
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2014 University of South Florida (sjbarbeau@gmail.com)
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -14,6 +13,7 @@
     limitations under the License.
 -->
 <resources>
+
     <style name="Theme.OneBusAway" parent="Theme.AppCompat.Light.DarkActionBar">
         <!--   App branding color for the app bar -->
         <item name="colorPrimary">@color/theme_primary</item>
@@ -25,5 +25,20 @@
         <item name="autoCompleteTextViewStyle">@style/cursorColor</item>
         <!-- Allows us to force Dark Theme throughout the app -->
         <item name="android:forceDarkAllowed">true</item>
+    </style>
+
+    <style name="Theme.OneBusAway.AppWidgetContainerParent" parent="@android:style/Theme.DeviceDefault">
+        <!-- Radius of the outer bound of widgets to make the rounded corners -->
+        <item name="appWidgetRadius">16dp</item>
+        <!--
+        Radius of the inner view's bound of widgets to make the rounded corners.
+        It needs to be 8dp or less than the value of appWidgetRadius
+        -->
+        <item name="appWidgetInnerRadius">8dp</item>
+    </style>
+
+    <style name="Theme.OneBusAway.AppWidgetContainer" parent="Theme.OneBusAway.AppWidgetContainerParent">
+        <!-- Apply padding to avoid the content of the widget colliding with the rounded corners -->
+        <item name="appWidgetPadding">16dp</item>
     </style>
 </resources>
