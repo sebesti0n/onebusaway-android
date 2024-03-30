@@ -91,10 +91,13 @@ public class TutorialFragment extends Fragment implements
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        stringArrayResourceId = getArguments().getInt(STRING_RESOURCE_ID, -1);
+        Bundle arguments = getArguments();
 
-        imageArrayResourceId = getArguments().getInt(IMAGE_RESOURCE_ID, -1);
+        if(arguments!=null) {
+            stringArrayResourceId = arguments.getInt(STRING_RESOURCE_ID, -1);
 
+            imageArrayResourceId = arguments.getInt(IMAGE_RESOURCE_ID, -1);
+        }
         return inflater.inflate(R.layout.tutorial, null, false);
     }
 
